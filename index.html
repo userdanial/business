@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #556b2f;
+            --secondary-color: #8bc34a;
+            --accent-color: #e74c3c;
+            --background-color: #d0d5d5;
+            --text-color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .banner {
+            background-image: url('fit.webp');
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        
+        }
+        .banner h1 {
+    font-size: 48px;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adds shadow to text for better contrast */
+    padding: 20px;
+    background-color: rgba(236, 233, 225, 0.7); /* Semi-transparent background */
+    border-radius: 8px; /* Optional: Rounded corners for a smoother look */
+}
+
+
+        .box {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s;
+        }
+        .box:hover {
+            transform: translateY(-10px);
+        }
+        .services {
+            background-color: var(--background-color);
+            padding: 50px 0;
+        }
+        .schedule {
+            background-color: var(--background-color);
+            padding: 50px 0;
+        }
+        .contact {
+            background-color: var(--background-color);
+            padding: 50px 0;
+        }
+        .footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        .nav-link {
+            color: var(--text-color);
+        }
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        .navbar-toggler-icon {
+            background-color: var(--text-color);
+        }
+        #contactModal {
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Siddiquees Fitness Club</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="banner" id="home">
+        <div class="container">
+            <h1>Your Fitness Journey Starts Here</h1>
+            
+            <a href="#services" class="btn btn-primary">Join Now</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <h3>Our Mission</h3>
+                        <p>At Siddiquees Fitness Club, our mission is to empower individuals to live healthier, stronger, and more balanced lives. We are dedicated to providing a supportive and motivating environment where members can achieve their fitness goals through personalized training, state-of-the-art equipment, and a variety of fitness classes. We believe that every person deserves to feel confident, strong, and motivated on their fitness journey, and we are committed to helping them unlock their full potential. Our mission is to inspire a community of fitness enthusiasts who prioritize well-being, growth, and positivity.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <h3>Our Vision</h3>
+                        <p>At Siddiquees Fitness Club, our vision is to be a leading fitness hub where individuals of all backgrounds come together to transform their health and wellness. We aim to foster a community that promotes inclusivity, dedication, and continuous growth. By offering innovative training methods, expert guidance, and a welcoming atmosphere, we strive to inspire everyone to reach their personal best. Our vision is to empower individuals to embrace a lifestyle of fitness, strength, and overall well-being.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <h3>Our Values</h3>
+                        <p>At Siddiquees Fitness Club, we are guided by core values that shape our community and approach to fitness. We believe in Integrity, ensuring honesty and transparency in everything we do. Excellence drives us to continuously improve and offer the best experience to our members. We value Inclusivity, welcoming people of all fitness levels and backgrounds. Our commitment to Accountability empowers members to stay motivated and achieve their goals. Lastly, we prioritize Respect, fostering a supportive and positive environment for everyone.
+
+
+
+
+
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <h3>Gym Memberships</h3><br>
+                       <center> <img src="https://wallpapers.com/images/hd/unleash-your-strength-at-4k-gym-mqz006pbxscrtjga.jpg" alt="gympic" width="80%"></center><br>
+                        <p>Our gym membership offers access to state-of-the-art equipment, expert trainers, and diverse fitness classes. Enjoy personalized workout plans and a supportive community to help you achieve your fitness goals. Also, the fee is all-time low, so get your membership now to enjoy greater benefits.</p>
+                        <p>$29.99/month</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <h3>Personal Training</h3><br>
+                    <center><img src="https://tse2.mm.bing.net/th?id=OIP.6ikobEUZqIYDEvCa3MDvUwHaEn&pid=Api&P=0&h=220" alt="gympic2" width="80%"></center><br>
+                        <p>Our personal training services provide one-on-one coaching with certified trainers, offering customized workout plans, expert guidance, and motivation tailored to your fitness goals. Achieve results efficiently and safely with our personalized approach.</p>
+                        <p>$49.99/session</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <h3>Group Classes</h3><br>
+                        <center><img src="https://tse4.mm.bing.net/th?id=OIP.J1hQRtZHotMdzI2knDlnaAHaFD&pid=Api&P=0&h=220" alt="gympic3" width="80%"></center><br>
+                        <p>Our group classes offer dynamic workouts like yoga, Zumba, HIIT, and more, designed to energize and motivate. Join a supportive community and enjoy fun, instructor-led sessions for all fitness levels and achieve your goals together!</p>
+                        <p>$19.99/class</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <h2>Class Schedule</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box">
+                        <h3>Monday</h3>
+                        <p>9:00 AM - Yoga</p>
+                        <p>10:00 AM - Pilates</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box">
+                        <h3>Tuesday</h3>
+                        <p>9:00 AM - Spin Class</p>
+                        <p>10:00 AM - Zumba</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box">
+                        <h3>Wednesday</h3>
+                        <p>9:00 AM - Yoga</p>
+                        <p>10:00 AM - HIIT</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box">
+                        <h3>Thursday</h3>
+                        <p>9:00 AM - Pilates</p>
+                        <p>10:00 AM - Cardio Blast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Get in Touch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                    <p>Address: 123 Main St, Anytown, USA 12345</p>
+                    <p>Phone: 555-555-5555</p>
+                    <p>Email: <a href="mailto:info@fitnessclub.com" style="color: var(--primary-color)">info@fitnessclub.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Fitness Club. All rights reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white">Facebook</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Instagram</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Twitter</a></li>
+            </ul>
+            <p>Business Hours: Monday - Friday: 9:00 AM - 5:00 PM, Saturday: 10:00 AM - 2:00 PM, Sunday: Closed</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
